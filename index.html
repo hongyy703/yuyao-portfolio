@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="洪语遥｜生物医学工程 × 智能传感 × 产品验证 × AI Agent" />
+  <title>洪语遥｜Biomedical Engineering × AI × Product Validation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到首页">
+      <span class="brand-mark">HY</span>
+      <span class="brand-name">洪语遥</span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#about" data-i18n="nav_about">背景</a>
+      <a href="#projects" data-i18n="nav_projects">项目</a>
+      <a href="#experience" data-i18n="nav_experience">经历</a>
+      <a href="#skills" data-i18n="nav_skills">技能</a>
+      <a href="#contact" data-i18n="nav_contact">联系</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="切换语言">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深色模式">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow" data-i18n="hero_eyebrow">HONG YUYAO · Biomedical Engineering × AI × Product Validation</div>
+        <h1 class="hero-statement">
+          <span class="hero-line"><span data-i18n="hero_statement_1">把复杂技术，变成能被</span><span class="gradient-text inline" data-i18n="hero_statement_focus">验证</span><span data-i18n="hero_statement_2">、被理解，</span></span>
+          <span class="hero-line" data-i18n="hero_statement_3">被真正使用的产品。</span>
+        </h1>
+        <div class="hero-bottom">
+          <div class="hero-intro">
+            <p class="hero-identity" data-i18n="hero_identity">洪语遥｜吉林大学生物医学工程硕士</p>
+            <p class="hero-lead" data-i18n="hero_lead">
+              从光学传感与便携检测系统，到 Python + LLM Agent，我习惯从需求出发，用实验、数据和工程验证把想法推进到可落地的方案。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects" data-i18n="hero_cta_projects">查看项目</a>
+              <a class="btn btn-secondary" href="Hong_Yuyao_Resume.pdf" target="_blank" rel="noopener" data-i18n="hero_cta_resume">下载简历</a>
+            </div>
+            <div class="hero-tags" aria-label="关键词">
+              <span>Biomedical Engineering</span>
+              <span>Python</span>
+              <span>LLM / RAG</span>
+              <span>Verification</span>
+              <span>Optical Sensing</span>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal delay-1" aria-label="核心数据">
+            <div class="radar-orbit" aria-hidden="true">
+              <span class="orbit orbit-1"></span>
+              <span class="orbit orbit-2"></span>
+              <span class="orbit-dot"></span>
+            </div>
+            <div class="hero-card-title" data-i18n="hero_card_title">Snapshot</div>
+            <div class="hero-metrics">
+              <div class="metric"><strong>5</strong><span data-i18n="metric_modules">Agent 核心模块</span></div>
+              <div class="metric"><strong>6</strong><span data-i18n="metric_validation">验证维度</span></div>
+              <div class="metric"><strong>30+</strong><span data-i18n="metric_members">团队成员</span></div>
+              <div class="metric"><strong>600+</strong><span data-i18n="metric_people">活动覆盖人次</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-strip section-shell" aria-label="Why me">
+      <article class="why-card reveal">
+        <span class="why-no">01</span>
+        <strong data-i18n="why1_title">验证思维</strong>
+        <p data-i18n="why1_text">把“感觉可行”变成有指标、有数据、有边界条件的结论。</p>
+      </article>
+      <article class="why-card reveal delay-1">
+        <span class="why-no">02</span>
+        <strong data-i18n="why2_title">跨学科连接</strong>
+        <p data-i18n="why2_text">化学 × 生物医学工程 × 光电传感 × AI，把不同语言翻译成同一个问题。</p>
+      </article>
+      <article class="why-card reveal delay-2">
+        <span class="why-no">03</span>
+        <strong data-i18n="why3_title">推进落地</strong>
+        <p data-i18n="why3_text">既能做实验和分析，也能协调 30+ 人团队把事情真正推进完。</p>
+      </article>
+    </section>
+
+    <section id="about" class="section section-shell">
+      <div class="section-heading reveal">
+        <span class="section-index">01</span>
+        <div>
+          <p class="kicker" data-i18n="about_kicker">BACKGROUND</p>
+          <h2 data-i18n="about_title">跨学科背景，面向真实产品问题</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="glass-card about-copy reveal">
+          <p data-i18n="about_p1">本科就读于山东大学化学专业，硕士转向吉林大学生物医学工程，将化学实验能力与光电、成像、传感、数据分析结合。</p>
+          <p><span data-i18n="about_p2_prefix">研究方向覆盖</span><strong class="inline-emphasis" data-i18n="about_focus">智能传感、微流控芯片与便携式手机检测系统</strong><span data-i18n="about_p2_tail">；同时主动探索 AI 在医疗器械产品洞察与验证中的应用。</span></p>
+          <p data-i18n="about_p3">我的核心能力是把复杂问题拆成可执行步骤：提炼需求、设计验证、分析数据、识别风险，并用结构化方式呈现结论。</p>
+        </div>
+        <div class="timeline reveal delay-1">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <span class="timeline-date">2024.09 — Present</span>
+              <h3 data-i18n="edu_jlu_title">吉林大学｜生物医学工程 硕士</h3>
+              <p data-i18n="edu_jlu_text">电子科学与工程学院 · 智能传感 / 微流控 / 便携检测</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div>
+              <span class="timeline-date">2020.09 — 2024.07</span>
+              <h3 data-i18n="edu_sdu_title">山东大学｜化学 本科</h3>
+              <p data-i18n="edu_sdu_text">化学与化工学院 · 实验设计 / 数据分析 / 科研训练</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="honor-strip reveal">
+        <span data-i18n="honor_1">吉林大学一等奖学金</span>
+        <span data-i18n="honor_2">吉林大学优秀研究生干部</span>
+        <span data-i18n="honor_3">吉林大学优秀团干部</span>
+        <span data-i18n="honor_4">山东大学一等奖学金</span>
+        <span data-i18n="honor_5">吉林大学优秀研究生</span>
+      </div>
+      <div class="publication-card reveal">
+        <div>
+          <p class="kicker" data-i18n="pub_kicker">PUBLICATION</p>
+          <h3 data-i18n="pub_title">科研成果</h3>
+        </div>
+        <div class="publication-copy">
+          <strong>Chinese Journal of Lasers · 2025 · 2107205</strong>
+          <span data-i18n="pub_note">另有 1 篇相关论文在投</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-shell">
+      <div class="section-heading reveal">
+        <span class="section-index">02</span>
+        <div>
+          <p class="kicker" data-i18n="projects_kicker">PROJECTS</p>
+          <h2 data-i18n="projects_title">把技术做成可验证、可解释的系统</h2>
+        </div>
+      </div>
+
+      <article class="project-feature reveal">
+        <div class="project-copy">
+          <div class="project-meta"><span>01</span><span data-i18n="project1_type">个人项目 · AI / MedTech</span></div>
+          <h3>MedTech Product Intelligence Agent</h3>
+          <p class="project-subtitle" data-i18n="project1_subtitle">医疗器械产品洞察与验证智能体</p>
+          <p data-i18n="project1_desc">基于 Python + LLM API 搭建多 Agent 原型，将医疗器械产品资料从“输入”转化为竞品矩阵、产品定位、验证建议与结构化报告。</p>
+          <div class="pill-row">
+            <span>Python</span><span>LLM API</span><span>RAG</span><span>Tool Calling</span><span>Prompt Iteration</span>
+          </div>
+          <div class="project-stat-row">
+            <div><strong>5</strong><span data-i18n="project1_stat1">核心模块</span></div>
+            <div><strong>6</strong><span data-i18n="project1_stat2">验证维度</span></div>
+            <div><strong>1</strong><span data-i18n="project1_stat3">自动化工作流</span></div>
+          </div>
+          <div class="agent-preview" aria-label="Agent workflow preview">
+            <div class="agent-preview-head">
+              <span data-i18n="agent_preview_label">WORKFLOW PREVIEW</span>
+              <span class="live-dot"></span>
+            </div>
+            <div class="agent-tabs" role="tablist">
+              <button class="agent-tab active" type="button" data-agent-step="0" data-i18n="agent_tab_1">需求解析</button>
+              <button class="agent-tab" type="button" data-agent-step="1" data-i18n="agent_tab_2">竞品分析</button>
+              <button class="agent-tab" type="button" data-agent-step="2" data-i18n="agent_tab_3">验证方案</button>
+            </div>
+            <p id="agentPreviewText" data-i18n="agent_preview_1">先把产品信息整理成三件事：给谁用、在什么场景用、最需要验证什么。</p>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-secondary btn-compact" href="case-agent.html" data-i18n="project1_case_cta">查看完整案例</a>
+            <a class="btn btn-primary btn-compact" href="case-agent.html#demo" data-i18n="project1_demo_cta">体验交互 Demo</a>
+          </div>
+        </div>
+        <div class="agent-visual-gallery" aria-label="AI 项目可视化预览">
+          <figure class="agent-shot shot-requirement">
+            <div class="shot-top"><span></span><span></span><span></span><b>Requirement Map</b></div>
+            <div class="shot-body requirement-map">
+              <div class="mini-doc"><i></i><i></i><i></i><i></i></div>
+              <div class="mini-arrow">→</div>
+              <div class="mini-tags"><span>User</span><span>Scenario</span><span>Metric</span></div>
+            </div>
+            <figcaption data-i18n="agent_visual_1">产品资料 → 需求拆解</figcaption>
+          </figure>
+          <figure class="agent-shot shot-matrix">
+            <div class="shot-top"><span></span><span></span><span></span><b>Competitor Matrix</b></div>
+            <div class="shot-body matrix-board">
+              <div class="matrix-head"><span></span><span>A</span><span>B</span><span>C</span></div>
+              <div class="matrix-row"><b>性能</b><i class="bar b1"></i><i class="bar b2"></i><i class="bar b3"></i></div>
+              <div class="matrix-row"><b>便携</b><i class="bar b2"></i><i class="bar b3"></i><i class="bar b1"></i></div>
+              <div class="matrix-row"><b>流程</b><i class="bar b3"></i><i class="bar b1"></i><i class="bar b2"></i></div>
+            </div>
+            <figcaption data-i18n="agent_visual_2">关键信息 → 竞品矩阵</figcaption>
+          </figure>
+          <figure class="agent-shot shot-validation">
+            <div class="shot-top"><span></span><span></span><span></span><b>Validation Plan</b></div>
+            <div class="shot-body validation-board">
+              <div><i>✓</i><span>Accuracy</span></div><div><i>✓</i><span>Repeatability</span></div>
+              <div><i>✓</i><span>Linearity</span></div><div><i>✓</i><span>Interference</span></div>
+              <div><i>✓</i><span>Environment</span></div><div><i>✓</i><span>User</span></div>
+            </div>
+            <figcaption data-i18n="agent_visual_3">验证问题 → 测试清单</figcaption>
+          </figure>
+          <div class="agent-visual-chip">RAG <span>+</span> Tool Calling</div>
+        </div>
+      </article>
+
+      <article class="project-feature reverse reveal">
+        <div class="project-copy">
+          <div class="project-meta"><span>02</span><span data-i18n="project2_type">硕士科研 · Optical Sensing</span></div>
+          <h3 data-i18n="project2_title">便携式手机检测系统开发</h3>
+          <p class="project-subtitle" data-i18n="project2_subtitle">复合探针 × 微流控芯片 × 智能手机读出</p>
+          <p data-i18n="project2_desc">构建一体化便携检测体系，将 600–700 nm 光谱信号转换为手机红通道定量值，完成流程优化、性能验证与工程化风险识别。</p>
+          <div class="pill-row">
+            <span>Optical Sensing</span><span>Microfluidics</span><span>Image Readout</span><span>Validation</span><span>Data Analysis</span>
+          </div>
+          <div class="project-stat-row project-stat-row-4">
+            <div><strong class="stat-word">UCL/CD</strong><span data-i18n="project2_stat1">双信号检测体系</span></div>
+            <div><strong>4</strong><span data-i18n="project2_stat2">全血样本</span></div>
+            <div><strong>7</strong><span data-i18n="project2_stat3">类饮料样品</span></div>
+            <div><strong class="stat-word">R</strong><span data-i18n="project2_stat4">红通道定量读出</span></div>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-secondary btn-compact" href="case-detection.html" data-i18n="project2_case_cta">查看完整案例</a>
+          </div>
+        </div>
+        <div class="project-media" aria-label="便携式手机检测 APP 应用视频">
+          <div class="video-frame">
+            <video controls playsinline preload="metadata" poster="app-demo-poster.jpg">
+              <source src="portable-detection-app-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="video-meta">
+            <span class="video-kicker" data-i18n="app_video_kicker">APP DEMO</span>
+            <strong data-i18n="app_video_title">便携式手机检测 APP 应用演示</strong>
+            <p data-i18n="app_video_desc">展示从微流控芯片图像采集、红通道读取到定量结果输出的实际操作流程。</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="section section-shell">
+      <div class="section-heading reveal">
+        <span class="section-index">03</span>
+        <div>
+          <p class="kicker" data-i18n="experience_kicker">LEADERSHIP</p>
+          <h2 data-i18n="experience_title">技术之外，我也擅长推动人和项目</h2>
+        </div>
+      </div>
+      <div class="leadership-stack">
+        <article class="leadership-card leadership-primary reveal">
+          <div class="leadership-role-copy">
+            <p class="role-date">2025.07 — Present</p>
+            <h3 data-i18n="lead_title">吉林大学电子科学与工程学院｜研究生会主席</h3>
+            <p data-i18n="lead_desc">统筹学院研究生会 6 个部门、30+ 名成员，负责活动策划、任务分工、进度协调与落地执行。</p>
+            <div class="role-badge" data-i18n="lead_class_role">同时担任 2024 级学硕班班长兼团支书 · 100 人班级</div>
+          </div>
+          <div class="leadership-metrics">
+            <div><strong>6</strong><span data-i18n="lead_m1">部门</span></div>
+            <div><strong>30+</strong><span data-i18n="lead_m2">成员</span></div>
+            <div><strong>15+</strong><span data-i18n="lead_m3">活动</span></div>
+            <div><strong>600+</strong><span data-i18n="lead_m4">覆盖人次</span></div>
+          </div>
+        </article>
+        <div class="leadership-history">
+          <article class="leadership-mini reveal delay-1">
+            <div class="mini-role-index">01</div>
+            <div>
+              <p class="role-date" data-i18n="undergrad_stage">本科期间</p>
+              <h3 data-i18n="lead_undergrad_arts_title">山东大学化学与化工学院学生会｜文艺部部长</h3>
+              <p data-i18n="lead_undergrad_arts_desc">组织策划院级迎新晚会、十大歌手大赛等活动；迎新晚会参与 400+ 人次，负责活动策划、流程统筹与现场执行。</p>
+              <div class="mini-metrics"><span><strong>400+</strong><i data-i18n="lead_welcome">迎新晚会</i></span><span><strong>1500+</strong><i data-i18n="lead_total_events">活动总参与人次</i></span></div>
+            </div>
+          </article>
+          <article class="leadership-mini reveal delay-2">
+            <div class="mini-role-index">02</div>
+            <div>
+              <p class="role-date" data-i18n="undergrad_stage">本科期间</p>
+              <h3 data-i18n="lead_admission_title">山东大学本科招生办学生组织“山小招”｜室务运营部部长</h3>
+              <p data-i18n="lead_admission_desc">组织策划山东大学回校宣讲活动，并参与录取通知书设计与学校宣传视频拍摄的策划筹备。</p>
+              <div class="mini-metrics"><span><strong>2000+</strong><i data-i18n="lead_admission_people">回校宣讲参与人次</i></span><span><strong data-i18n="lead_content">Design + Video</strong><i data-i18n="lead_content_label">招生传播内容</i></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-shell">
+      <div class="section-heading reveal">
+        <span class="section-index">04</span>
+        <div>
+          <p class="kicker" data-i18n="skills_kicker">SKILLS</p>
+          <h2 data-i18n="skills_title">技能矩阵</h2>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span class="skill-no">01</span><h3 data-i18n="skill1_title">AI & Automation</h3><p>Python · LLM API · RAG · Tool Calling · AI Agent · Prompt Iteration</p></article>
+        <article class="skill-card reveal delay-1"><span class="skill-no">02</span><h3 data-i18n="skill2_title">验证 & 数据</h3><p>Validation · Repeatability · Linearity · Interference · Risk Analysis · Excel · Origin</p></article>
+        <article class="skill-card reveal delay-2"><span class="skill-no">03</span><h3 data-i18n="skill3_title">光电 & 检测</h3><p>Optical Sensing · Spectral Analysis · Imaging · Microfluidics · Smartphone Readout</p></article>
+        <article class="skill-card reveal delay-3"><span class="skill-no">04</span><h3 data-i18n="skill4_title">沟通 & 项目</h3><p>Project Coordination · Cross-functional Communication · Structured Reporting · PowerPoint · Canva · draw.io</p></article>
+      </div>
+      <div class="language-card reveal">
+        <div><span class="lang-badge">CET-6</span><strong data-i18n="english_title">英语能力</strong></div>
+        <p data-i18n="english_desc">具备英文文献阅读、技术资料理解与基础工作沟通能力。</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-shell contact-section">
+      <div class="contact-card reveal">
+        <p class="kicker" data-i18n="contact_kicker">LET'S CONNECT</p>
+        <h2 data-i18n="contact_title">把问题拆清楚，再用数据和验证把它做实。</h2>
+        <p data-i18n="contact_desc">实验、数据、AI 工具与项目协作，是我反复使用的四种解决问题的方式。</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:hyyxw2020@163.com">hyyxw2020@163.com</a>
+          <a class="btn btn-secondary" href="Hong_Yuyao_Resume.pdf" target="_blank" rel="noopener" data-i18n="contact_resume">查看简历 PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <span>© 2026 洪语遥</span>
+    <span data-i18n="footer_text">Biomedical engineering · validation · AI · project execution.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

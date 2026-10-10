@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="洪语遥｜MedTech Product Intelligence Agent 案例研究" />
+  <title>MedTech Product Intelligence Agent｜洪语遥</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header case-header">
+    <a class="brand" href="index.html#projects" aria-label="返回项目">
+      <span class="brand-mark">HY</span>
+      <span class="brand-name" data-i18n="case_back">返回作品集</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="切换语言">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深色模式">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero section-shell">
+      <div class="case-breadcrumb reveal">CASE STUDY · AI / MEDTECH</div>
+      <h1 class="reveal" data-i18n="agent_case_title">把分散的产品资料，变成可执行的验证问题。</h1>
+      <p class="case-hero-lead reveal" data-i18n="agent_case_lead">MedTech Product Intelligence Agent 是一个面向医疗器械产品洞察与验证的个人项目。我尝试把需求拆解、竞品分析、用户洞察、产品定位和验证方案串成一条结构化工作流。</p>
+      <div class="case-hero-meta reveal">
+        <span>Python</span><span>LLM API</span><span>RAG</span><span>Tool Calling</span><span>Prompt Iteration</span>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-grid-3">
+        <article class="case-card reveal"><span class="case-label" data-i18n="case_problem">问题</span><h2 data-i18n="agent_problem_title">产品资料很多，但验证问题往往没有被结构化。</h2><p data-i18n="agent_problem_text">医疗器械资料通常同时包含产品参数、用户场景、竞品信息与测试要求。我的目标是把这些异构信息转成可比较、可追踪、可验证的结构化输出。</p></article>
+        <article class="case-card reveal delay-1"><span class="case-label" data-i18n="case_role">我的工作</span><h2 data-i18n="agent_role_title">从框架设计到 Prompt 迭代，独立搭建原型。</h2><p data-i18n="agent_role_text">设计 5 个核心模块，引入 RAG 与 Tool Calling 处理资料与技术文档，并结合生物医学工程和产品验证经验人工核验输出、持续迭代 Prompt。</p></article>
+        <article class="case-card reveal delay-2"><span class="case-label" data-i18n="case_result">结果</span><h2><strong class="case-big-number">5</strong> <span data-i18n="agent_result_modules">核心模块</span> · <strong class="case-big-number">6</strong> <span data-i18n="agent_result_dimensions">验证维度</span></h2><p data-i18n="agent_result_text">形成“资料输入—关键信息提取—竞品矩阵—验证方案—分析报告”的自动化工作流原型。</p></article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>01</span><div><p class="kicker">SYSTEM</p><h2 data-i18n="agent_arch_title">工作流架构</h2></div></div>
+      <div class="architecture-track reveal">
+        <div class="architecture-step"><span>01</span><b data-i18n="agent_arch_1">资料输入</b><small data-i18n="agent_arch_1d">产品资料 / 技术文档</small></div>
+        <div class="architecture-arrow">→</div>
+        <div class="architecture-step"><span>02</span><b data-i18n="agent_arch_2">需求拆解</b><small data-i18n="agent_arch_2d">场景 / 用户 / 指标</small></div>
+        <div class="architecture-arrow">→</div>
+        <div class="architecture-step"><span>03</span><b data-i18n="agent_arch_3">竞品分析</b><small data-i18n="agent_arch_3d">参数 / 定位 / 差异</small></div>
+        <div class="architecture-arrow">→</div>
+        <div class="architecture-step"><span>04</span><b data-i18n="agent_arch_4">产品定位</b><small data-i18n="agent_arch_4d">价值点 / 风险假设</small></div>
+        <div class="architecture-arrow">→</div>
+        <div class="architecture-step emphasized"><span>05</span><b data-i18n="agent_arch_5">验证方案</b><small data-i18n="agent_arch_5d">6 类维度</small></div>
+      </div>
+    </section>
+
+    <section id="demo" class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>02</span><div><p class="kicker">INTERACTIVE DEMO</p><h2 data-i18n="agent_demo_title">体验一次“从需求到验证”的流程</h2></div></div>
+      <div class="demo-notice reveal" data-i18n="agent_demo_notice">这是前端交互原型，用于展示工作流与信息结构，不调用真实大模型，也不会上传你的输入。</div>
+      <div class="demo-shell reveal">
+        <form class="demo-form" id="agentDemoForm">
+          <label><span data-i18n="demo_product_label">产品 / 场景</span><input id="demoProduct" type="text" value="便携式生物标志物检测设备" data-i18n-placeholder="demo_product_placeholder" /></label>
+          <label><span data-i18n="demo_user_label">目标用户</span><input id="demoUser" type="text" value="基层医疗人员与非专业用户" data-i18n-placeholder="demo_user_placeholder" /></label>
+          <label><span data-i18n="demo_feature_label">关键诉求</span><input id="demoFeature" type="text" value="操作简单、结果稳定、便于现场使用" data-i18n-placeholder="demo_feature_placeholder" /></label>
+          <button class="btn btn-primary" type="submit" data-i18n="demo_run">生成结构化分析</button>
+        </form>
+        <div class="demo-output" id="demoOutput" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>03</span><div><p class="kicker">VALIDATION</p><h2 data-i18n="agent_validation_title">我把“验证”拆成 6 个问题</h2></div></div>
+      <div class="validation-grid reveal">
+        <article><b data-i18n="val_accuracy">准确性</b><p data-i18n="val_accuracy_d">结果与参考值有多接近？</p></article>
+        <article><b data-i18n="val_repeat">重复性</b><p data-i18n="val_repeat_d">同条件重复测量是否稳定？</p></article>
+        <article><b data-i18n="val_linearity">线性范围</b><p data-i18n="val_linearity_d">在哪个范围内输出与输入保持可预测关系？</p></article>
+        <article><b data-i18n="val_interference">干扰因素</b><p data-i18n="val_interference_d">样本或环境中哪些因素会改变结果？</p></article>
+        <article><b data-i18n="val_environment">环境条件</b><p data-i18n="val_environment_d">温度、设备与场景变化会带来什么影响？</p></article>
+        <article><b data-i18n="val_user">用户操作</b><p data-i18n="val_user_d">真实用户的操作差异是否会影响性能？</p></article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-split">
+        <article class="case-card reveal"><span class="case-label" data-i18n="case_learning">我学到的</span><h2 data-i18n="agent_learning_title">好的 AI 输出，需要领域判断做最后一层验证。</h2><p data-i18n="agent_learning_text">这个项目让我更清楚地区分“模型生成的信息”和“可以被工程团队使用的结论”。因此我把人工核验和 Prompt 迭代保留在工作流里，而不是把自动生成当成最终答案。</p></article>
+        <article class="case-card reveal delay-1"><span class="case-label" data-i18n="case_next">下一步</span><h2 data-i18n="agent_next_title">把原型继续做成可追踪的产品验证工作台。</h2><p data-i18n="agent_next_text">下一步可加入来源追踪、版本管理、验证任务状态、数据回写与真实产品资料的权限控制，让输出从“报告”进一步变成可协作的验证流程。</p></article>
+      </div>
+    </section>
+
+    <section class="case-next section-shell reveal">
+      <p class="kicker">NEXT CASE</p>
+      <a href="case-detection.html"><span data-i18n="next_detection">便携式手机检测系统开发</span><strong>→</strong></a>
+    </section>
+  </main>
+
+  <footer class="footer section-shell"><span>© 2026 洪语遥</span><a href="index.html" data-i18n="case_back">返回作品集</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

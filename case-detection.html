@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="洪语遥｜便携式手机检测系统案例研究" />
+  <title>便携式手机检测系统｜洪语遥</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header case-header">
+    <a class="brand" href="index.html#projects" aria-label="返回项目">
+      <span class="brand-mark">HY</span>
+      <span class="brand-name" data-i18n="case_back">返回作品集</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" id="langToggle" type="button" aria-label="切换语言">EN</button>
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深色模式">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero section-shell">
+      <div class="case-breadcrumb reveal">CASE STUDY · OPTICAL SENSING</div>
+      <h1 class="reveal" data-i18n="det_case_title">把实验室光谱信号，转成手机可以读取的定量结果。</h1>
+      <p class="case-hero-lead reveal" data-i18n="det_case_lead">硕士科研中，我参与构建“复合探针—微流控芯片—智能手机读出”的一体化便携检测体系，重点负责芯片与手机端检测流程开发、性能验证和工程风险识别。</p>
+      <div class="case-hero-meta reveal"><span>Optical Sensing</span><span>Microfluidics</span><span>Smartphone Readout</span><span>Validation</span><span>Data Analysis</span></div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="impact-grid reveal">
+        <div><strong class="impact-word">UCL / CD</strong><span data-i18n="det_metric_dual">双信号检测体系</span></div>
+        <div><strong>4</strong><span data-i18n="det_metric_blood">例全血样本</span></div>
+        <div><strong>7</strong><span data-i18n="det_metric_drink">类饮料样品</span></div>
+        <div><strong class="impact-word">R Channel</strong><span data-i18n="det_metric_red">手机红通道定量读出</span></div>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>00</span><div><p class="kicker" data-i18n="det_video_kicker">APP DEMO</p><h2 data-i18n="det_video_heading">把检测流程真正放进手机里</h2></div></div>
+      <div class="case-video-shell reveal">
+        <div class="video-frame">
+          <video controls playsinline preload="metadata" poster="app-demo-poster.jpg">
+            <source src="portable-detection-app-demo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="case-video-copy">
+          <p class="kicker" data-i18n="det_video_label">APPLICATION VIDEO</p>
+          <h3 data-i18n="det_video_title">便携式手机检测 APP 应用演示</h3>
+          <p data-i18n="det_video_text">视频展示了手机端对微流控芯片图像进行读取与分析的实际流程，包括样品模式选择、标定曲线调用、红通道读取以及定量结果输出，让“便携检测”从实验链路延伸到实际交互界面。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-grid-3">
+        <article class="case-card reveal"><span class="case-label" data-i18n="case_problem">问题</span><h2 data-i18n="det_problem_title">如何让光学检测从实验室仪器走向便携读出？</h2><p data-i18n="det_problem_text">核心挑战不仅是获得信号，而是建立从反应、芯片加样、图像采集到定量分析的一套稳定流程，并理解真实样本和设备变化带来的误差。</p></article>
+        <article class="case-card reveal delay-1"><span class="case-label" data-i18n="case_role">我的工作</span><h2 data-i18n="det_role_title">负责芯片与手机端检测流程开发和验证。</h2><p data-i18n="det_role_text">优化反应条件、加样和图像采集流程，完成标准曲线、误差与重复性评价，并对真实样本、设备差异与试剂稳定性进行验证和风险识别。</p></article>
+        <article class="case-card reveal delay-2"><span class="case-label" data-i18n="case_result">结果</span><h2 data-i18n="det_result_title">形成可量化的手机端读出链路。</h2><p data-i18n="det_result_text">实现 600–700 nm 光谱信号向手机红通道定量值转化，建立 UCL/CD 双信号检测体系，并完成多类真实样本验证。</p></article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>01</span><div><p class="kicker">SYSTEM</p><h2 data-i18n="det_system_title">系统不是一个点，而是一条链路</h2></div></div>
+      <div class="detection-system reveal">
+        <div class="detection-stage"><span class="detection-icon">◈</span><b data-i18n="det_stage_1">复合探针</b><small data-i18n="det_stage_1d">产生可检测光学信号</small></div>
+        <span>→</span>
+        <div class="detection-stage"><span class="detection-icon">▦</span><b data-i18n="det_stage_2">微流控芯片</b><small data-i18n="det_stage_2d">承载加样与反应流程</small></div>
+        <span>→</span>
+        <div class="detection-stage"><span class="detection-icon">◎</span><b data-i18n="det_stage_3">手机图像采集</b><small data-i18n="det_stage_3d">读取红通道信号</small></div>
+        <span>→</span>
+        <div class="detection-stage emphasized"><span class="detection-icon">∿</span><b data-i18n="det_stage_4">定量分析</b><small data-i18n="det_stage_4d">标准曲线 / 结果输出</small></div>
+      </div>
+      <div class="readout-path reveal" aria-label="手机定量读出链路">
+        <article class="readout-card readout-image">
+          <div class="readout-no">01</div>
+          <div class="readout-thumb"><img src="app-demo-poster.jpg" alt="便携式手机检测 APP 界面" /></div>
+          <div><b data-i18n="readout_1">图像采集</b><p data-i18n="readout_1d">手机读取微流控芯片图像，把实验信号带入数字化流程。</p></div>
+        </article>
+        <div class="readout-arrow">→</div>
+        <article class="readout-card">
+          <div class="readout-no">02</div>
+          <div class="channel-visual"><span class="ch-r">R</span><span>G</span><span>B</span><div class="channel-meter"><i></i></div></div>
+          <div><b data-i18n="readout_2">红通道提取</b><p data-i18n="readout_2d">将图像中的红通道信号提取为可比较的数值。</p></div>
+        </article>
+        <div class="readout-arrow">→</div>
+        <article class="readout-card">
+          <div class="readout-no">03</div>
+          <div class="quant-visual"><span>R value</span><strong>→</strong><span>Calibration</span><strong>→</strong><span>Result</span></div>
+          <div><b data-i18n="readout_3">定量输出</b><p data-i18n="readout_3d">结合标准曲线，把通道值转成最终可读的定量结果。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>02</span><div><p class="kicker">VALIDATION</p><h2 data-i18n="det_validation_title">从“能测到”到“结果值得相信”</h2></div></div>
+      <div class="validation-timeline reveal">
+        <article><span>01</span><div><b data-i18n="det_v1">流程优化</b><p data-i18n="det_v1d">优化反应条件、加样与图像采集流程。</p></div></article>
+        <article><span>02</span><div><b data-i18n="det_v2">定量关系</b><p data-i18n="det_v2d">建立标准曲线，将手机通道值转化为可分析的定量结果。</p></div></article>
+        <article><span>03</span><div><b data-i18n="det_v3">重复性与误差</b><p data-i18n="det_v3d">评价测试结果在重复测量中的稳定性与偏差。</p></div></article>
+        <article><span>04</span><div><b data-i18n="det_v4">真实样本</b><p data-i18n="det_v4d">完成 4 例全血样本、7 类饮料样品验证。</p></div></article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-section-heading reveal"><span>03</span><div><p class="kicker">RISK</p><h2 data-i18n="det_risk_title">我更关注“什么情况下它会失效”</h2></div></div>
+      <div class="risk-grid reveal">
+        <article><span>01</span><b data-i18n="risk_sample">样品干扰</b><p data-i18n="risk_sample_d">复杂基质可能改变信号与定量关系。</p></article>
+        <article><span>02</span><b data-i18n="risk_time">反应时间</b><p data-i18n="risk_time_d">时间窗口变化会影响读数一致性。</p></article>
+        <article><span>03</span><b data-i18n="risk_device">设备差异</b><p data-i18n="risk_device_d">不同手机/采集条件可能引入系统偏差。</p></article>
+        <article><span>04</span><b data-i18n="risk_reagent">试剂稳定性</b><p data-i18n="risk_reagent_d">保存与使用条件会影响长期可靠性。</p></article>
+      </div>
+    </section>
+
+    <section class="case-section section-shell">
+      <div class="case-split">
+        <article class="case-card reveal"><span class="case-label" data-i18n="case_learning">我学到的</span><h2 data-i18n="det_learning_title">真正的工程化，发生在“误差来源”里。</h2><p data-i18n="det_learning_text">项目让我从单纯追求更好的实验结果，转向关注流程、重复性、真实样本、设备差异和边界条件。这也形成了我后来做产品验证与系统测试时的核心思维。</p></article>
+        <article class="case-card reveal delay-1"><span class="case-label">OUTPUT</span><h2>Chinese Journal of Lasers · 2025 · 2107205</h2><p data-i18n="det_output_text">相关科研成果已发表，另有 1 篇相关论文在投。</p></article>
+      </div>
+    </section>
+
+    <section class="case-next section-shell reveal"><p class="kicker">NEXT CASE</p><a href="case-agent.html"><span>MedTech Product Intelligence Agent</span><strong>→</strong></a></section>
+  </main>
+
+  <footer class="footer section-shell"><span>© 2026 洪语遥</span><a href="index.html" data-i18n="case_back">返回作品集</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
